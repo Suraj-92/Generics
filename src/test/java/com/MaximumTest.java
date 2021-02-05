@@ -46,5 +46,26 @@ public class MaximumTest {
         maximum.testMaximum1(xFloat, yFloat, zFloat);
         Assertions.assertEquals(8.8f,5.5f);
     }
+    @Test
+    public void firstPositionStringIsMaximum(){
+        Maximum maximum = new Maximum();
+        String xStr = "Apple", yStr = "Peach", zStr = "Orange";
+        maximum.testMaximum1(xStr, yStr, zStr);
+        Assertions.assertEquals("Apple","Apple");
+    }
+    @Test
+    public void secondPositionStringIsMaximum(){
+        Maximum maximum = new Maximum();
+        String xStr = "Apple", yStr = "Peach", zStr = "Orange";
+        maximum.testMaximum1(xStr, yStr, zStr);
+        Assertions.assertEquals("Apple","Peach");
+    }
+    @Test
+    public void thirdPositionStringIsMaximum(){
+        Maximum maximum = new Maximum();
+        String xStr = "Apple", yStr = "Peach", zStr = "Orange";
+        maximum.testMaximum1(xStr, yStr, zStr);
+        Assertions.assertEquals("Apple","Orange");
+    }
 
 }
